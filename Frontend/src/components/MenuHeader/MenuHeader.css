@@ -1,4 +1,4 @@
-.menuNav{
+.menuNav {
     /* Posicion */
     position: sticky;
 
@@ -9,22 +9,20 @@
 
     /* Apariencia */
     background: var(--color-white);
-    box-shadow: 0 0 8px 2px var(--color-primary);
+    box-shadow: 0 0 8px 2px var(--color-dark);
 
     /* Miscelanea */
     display: grid;
     grid-template-columns: 150px 1fr;
 }
 
-.menuNav__imagen{
+.menuNav__imagen {
     /* Caja */
     height: 100%;
     overflow: hidden;
-    /* Apariencia */
-    background-color: var(--color-light);
 }
 
-.enlacesNav{
+.enlacesNav {
     box-sizing: border-box;
     padding-right: 10px;
     /* Miscelanea */
@@ -33,7 +31,7 @@
     justify-content: end;
 }
 
-.enlacesNav__enlace{
+.enlacesNav__enlace {
     box-sizing: border-box;
     padding: 5px 8px;
 
@@ -41,13 +39,26 @@
     text-decoration: none;
     color: var(--color-primary);
 
-    &:hover{
+    &:hover {
         color: var(--color-dark);
         background-color: var(--color-light);
         border-radius: 30px;
     }
 }
 
-.enlacesNav__enlace + .enlacesNav__enlace{
+.enlacesNav__enlace--active {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    border-radius: 30px;
+}
+
+.enlacesNav__enlace+.enlacesNav__enlace {
     margin-left: 10px;
+}
+
+@media (width <= 600px) {
+    .enlacesNav {
+        display: none;
+    }
+
 }

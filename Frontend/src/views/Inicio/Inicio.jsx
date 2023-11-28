@@ -1,5 +1,11 @@
+import "./Inicio.css";
+
 export function Inicio(){
     return(
-        <h1>Inicio Works...</h1>
+        <>
+            <main className="inicioMain">
+                <h1 className="inicioMain__titulo">FIFA World Cup 2022</h1>
+            </main>
+        </>
     );
 }

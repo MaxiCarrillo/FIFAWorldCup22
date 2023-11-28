@@ -1,0 +1,8 @@
+.inicioMain{
+    /*  */
+    box-sizing: border-box;
+}
+
+.inicioMain__titulo{
+    text-align: center;
+}
