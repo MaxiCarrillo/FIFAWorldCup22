@@ -5,7 +5,6 @@ function App() {
 
   return (
     <>
-      <MenuHeader></MenuHeader>
       <Navigation></Navigation>
     </>
   )
