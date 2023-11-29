@@ -5,7 +5,11 @@ import { NavLink } from "react-router-dom";
 export function MenuHeader() {
     return (
         <header className="menuNav">
-            <img src={logoMundial} alt="FIFA World Cup 2022 Logo" title="FIFA World Cup 2022" className="menuNav__imagen" />
+            <NavLink
+                to="/inicio"
+                className="menuNav__imagen">
+                <img src={logoMundial} alt="FIFA World Cup 2022 Logo" title="FIFA World Cup 2022" className="menuNav__imagen" />
+            </NavLink>
             <nav className="enlacesNav">
                 <NavLink
                     to="/inicio"
