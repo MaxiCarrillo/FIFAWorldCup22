@@ -1,10 +1,22 @@
 import { UserLayout } from "../layouts/userLayout/UserLayout";
-import { Inicio, NotFound, OnceIdeal } from "../views";
+import { Inicio, NotFound, OnceIdeal, Login, Registro } from "../views";
 
 const routes = [
     {
         path: "/",
         component: Inicio,
+        layout: UserLayout,
+        exact: true
+    },
+    {
+        path: "/iniciarSesion",
+        component: Login,
+        layout: UserLayout,
+        exact: true
+    },
+    {
+        path: "/registro",
+        component: Registro,
         layout: UserLayout,
         exact: true
     },

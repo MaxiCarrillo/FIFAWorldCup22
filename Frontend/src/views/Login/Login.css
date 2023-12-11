@@ -1,0 +1,51 @@
+.loginMain {
+    box-sizing: border-box;
+    margin-inline: auto;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 1em;
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    box-shadow: 0px 10px 1rem 0px var(--color-dark);
+}
+
+.loginMain__titulo{
+    padding-top: 1rem; 
+}
+
+.contenedorInput{
+    margin-inline: auto;
+    max-width: 300px;
+    text-align: start;
+}
+
+.formLabel{
+    font-size: 0.7rem;
+    color: var(--color-off);
+}
+
+.formInput{
+    display: block;
+    padding-block: 6px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--color-off);
+
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-down);
+
+    transition: border-bottom 300ms ease-in;
+
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid var(--color-primary);
+    }
+}
+
+#btnIngresar{
+    width: 100%;
+    max-width: 300px;
+}

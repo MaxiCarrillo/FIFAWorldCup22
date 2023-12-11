@@ -5,10 +5,55 @@
   --color-border: #f50939;
   --color-light: #ffe1e4;
   --color-white: #fff;
+  --color-off: #888;
+  --color-down: #444444;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.btn--primary {
+  padding-block: 0.5em;
+  padding-inline: 1em;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1rem;
+
+  &:hover {
+    background: var(--color-dark);
+    color: var(--color-white);
+  }
+
+  &:active {
+    background: var(--color-primary);
+  }
+}
+
+.contenedorAncor{
+  max-width: 300px;
+  margin-inline: auto;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ancor--primary {
+  text-decoration: none;
+  color: var(--color-off);
+
+  transition: color 300ms ease-in-out;
+
+  &:hover {
+    color: var(--color-border);
+  }
+}
+
+.ancor--primary+.ancor--primary {
+  margin-left: 10px;
 }

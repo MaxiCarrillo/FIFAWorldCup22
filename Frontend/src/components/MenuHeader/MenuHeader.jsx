@@ -6,13 +6,13 @@ export function MenuHeader() {
     return (
         <header className="menuNav">
             <NavLink
-                to="/inicio"
+                to="/"
                 className="menuNav__imagen">
                 <img src={logoMundial} alt="FIFA World Cup 2022 Logo" title="FIFA World Cup 2022" className="menuNav__imagen" />
             </NavLink>
             <nav className="enlacesNav">
                 <NavLink
-                    to="/inicio"
+                    to="/"
                     className={({ isActive }) => {
                         return isActive ? "enlacesNav__enlace enlacesNav__enlace--active" : "enlacesNav__enlace";
                     }}
@@ -32,6 +32,13 @@ export function MenuHeader() {
                         return isActive ? "enlacesNav__enlace enlacesNav__enlace--active" : "enlacesNav__enlace";
                     }}
                 >Once Ideal
+                </NavLink>
+                <NavLink
+                    to="/iniciarSesion"
+                    className={({ isActive }) => {
+                        return isActive ? "enlacesNav__enlace enlacesNav__enlace--active" : "enlacesNav__enlace";
+                    }}>
+                    Iniciar Sesión
                 </NavLink>
             </nav>
         </header>
