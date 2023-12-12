@@ -7,6 +7,7 @@ let app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use('/api/usuario', require('./routes/usuario'));
 app.use('/api/jugador', require('./routes/jugador'));
 app.set("port", process.env.PORT || 3000);
 
