@@ -1,5 +1,5 @@
 import { UserLayout } from "../layouts/userLayout/UserLayout";
-import { Inicio, NotFound, OnceIdeal, Login, Registro } from "../views";
+import { Inicio, NotFound, OnceIdeal, Login, Registro, ForgetPassword } from "../views";
 
 const routes = [
     {
@@ -17,6 +17,12 @@ const routes = [
     {
         path: "/registro",
         component: Registro,
+        layout: UserLayout,
+        exact: true
+    },
+    {
+        path: "/forgetPassword",
+        component: ForgetPassword,
         layout: UserLayout,
         exact: true
     },

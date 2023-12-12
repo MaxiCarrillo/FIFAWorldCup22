@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Login.css";
 
 export function Login() {
@@ -16,8 +17,8 @@ export function Login() {
                 <button type="submit" className="btn--primary" id="btnIngresar">Ingresar</button>
             </form>
             <div className="contenedorAncor">
-                <a href="" className="ancor--primary">Registrarme</a>
-                <a href="" className="ancor--primary">Olvidé mi Contraseña</a>
+                <NavLink to="/registro" className="enlace--off">Registrarme</NavLink>
+                <NavLink to="/forgetPassword" className="enlace--off">Olvidé mi Contraseña</NavLink>
             </div>
         </main>
     );

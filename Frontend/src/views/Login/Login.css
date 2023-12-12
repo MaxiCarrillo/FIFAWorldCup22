@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin-inline: auto;
     margin-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     max-width: 500px;
     text-align: center;
@@ -11,22 +12,22 @@
     box-shadow: 0px 10px 1rem 0px var(--color-dark);
 }
 
-.loginMain__titulo{
-    padding-top: 1rem; 
+.loginMain__titulo {
+    margin: 0;
 }
 
-.contenedorInput{
+.contenedorInput {
     margin-inline: auto;
     max-width: 300px;
     text-align: start;
 }
 
-.formLabel{
+.formLabel {
     font-size: 0.7rem;
     color: var(--color-off);
 }
 
-.formInput{
+.formInput {
     display: block;
     padding-block: 6px;
     width: 100%;
@@ -39,13 +40,21 @@
 
     transition: border-bottom 300ms ease-in;
 
-    &:focus{
+    &:focus {
         outline: none;
         border-bottom: 2px solid var(--color-primary);
     }
 }
 
-#btnIngresar{
+#btnIngresar {
     width: 100%;
     max-width: 300px;
+}
+
+.contenedorAncor {
+    max-width: 300px;
+    margin-inline: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
 }

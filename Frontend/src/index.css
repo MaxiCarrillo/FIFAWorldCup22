@@ -35,16 +35,9 @@ body {
   }
 }
 
-.contenedorAncor{
-  max-width: 300px;
-  margin-inline: auto;
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.ancor--primary {
+.enlace--off {
   text-decoration: none;
+  font-weight: 500;
   color: var(--color-off);
 
   transition: color 300ms ease-in-out;
@@ -54,6 +47,6 @@ body {
   }
 }
 
-.ancor--primary+.ancor--primary {
+.enlace--off + .ancor--off {
   margin-left: 10px;
 }
