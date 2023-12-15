@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "./routes";
+import routesAdmin from "./admin.routes";
 import { map } from "lodash";
 
 export function Navigation() {
@@ -7,7 +8,7 @@ export function Navigation() {
         <BrowserRouter>
             <Routes>
                 {
-                    map(routes, (route, index) => (
+                    map(routesAdmin, (route, index) => (
                         <Route
                             key={index}
                             path={route.path}
