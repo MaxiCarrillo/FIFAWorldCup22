@@ -19,11 +19,11 @@ export function Login() {
             password: Yup.string().required("La contraseña es obligatoria")
         }),
         onSubmit: async (formData) => {
-            try{
+            try {
                 const response = await loginApi(formData);
                 const { access } = response;
                 login(access)
-            }catch(error){
+            } catch (error) {
                 console.log(error);
             }
         }

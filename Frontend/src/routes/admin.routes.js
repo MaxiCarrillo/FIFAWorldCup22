@@ -9,18 +9,6 @@ const routesAdmin = [
         exact: true
     },
     {
-        path: "/iniciarSesion",
-        component: Login,
-        layout: AdminLayout,
-        exact: true
-    },
-    {
-        path: "/registro",
-        component: Registro,
-        layout: AdminLayout,
-        exact: true
-    },
-    {
         path: "/forgetPassword",
         component: ForgetPassword,
         layout: AdminLayout,

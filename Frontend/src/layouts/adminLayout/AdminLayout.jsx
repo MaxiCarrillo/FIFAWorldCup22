@@ -5,8 +5,6 @@ export function AdminLayout(props){
     const {children} = props;
     const {auth} = useAuth();
 
-    if(auth) return (<h1>Panel</h1>)
-
     return(
         <div className="adminLayout">
             <div className="adminLayout__header">
